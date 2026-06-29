@@ -317,39 +317,58 @@
 }
         }
         
-        @media (max-width: 768px) {
-  .galeria {
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    gap: 30px;
-  }
-
-  .cartao {
-    width: 100%;
-    max-width: 400px;
-  }
+       @media (max-width: 768px) {
+    .card-container { 
+        max-width: 100% !important; 
+        margin: 0 !important; 
+        border-radius: 0 !important; 
+    }
+    
+    .content-area { 
+        padding: 0 20px 30px 20px !important; 
+    }
+    
+    .top-row { 
+        flex-direction: column !important; 
+        align-items: center !important; 
+        gap: 20px !important; 
+        margin-top: -90px !important; 
+    }
+    
+    .logo-box { 
+        width: 120px !important; 
+        height: 120px !important; 
+    }
+    
+    .profile-box { 
+        width: 140px !important; 
+        height: 140px !important; 
+        margin-top: 0 !important; 
+    }
+    
+    .bottom-row { 
+        flex-direction: column !important; 
+        text-align: center !important; 
+        gap: 25px !important; 
+    }
+    
+    .buttons-area { 
+        width: 100% !important; 
+        justify-content: center !important; 
+    }
+    
+    .btn { 
+        width: 100% !important; 
+        justify-content: center !important; 
+        box-sizing: border-box !important; 
+    }
+    
+    .grid-catalogo {
+        grid-template-columns: 1fr !important; 
+        gap: 25px !important;
+        padding: 0 !important;
+    }
 }
-.banner-container {
-    max-width: 380px;
-    margin: 20px auto;
-    border-radius: 15px;
-    position: static;
-  }
-
-  .banner-content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .top-section {
-    height: 200px;
-  }
-
-  .logo-container {
-    top: 15px;
-    left: 15px;
-  }
 
   .alianca-logo {
     width: 80px;
@@ -420,7 +439,7 @@
     width: 30px;
     height: 30px;
   }
-}
+
 
     </style>
 </head>
@@ -691,7 +710,7 @@
         <div class="topo-red">
             <div class="voltar-txt">&lt; Voltar</div>
             <div class="nome-modelo">PCX ABS</div>
-            <img src="C:\Users\mauri\Downloads\visao-da-lateral-direita-da-honda-pcx-azul-removebg-preview.png">
+            <img src="C:\Users\mauri\Downloads\PCX.png">
         </div>
         <div class="barra-honda"><h2>HONDA</h2><span>Consórcio</span></div>
         <table class="tabela-precos">
