@@ -289,15 +289,18 @@
     flex-direction: column;
     gap: 10px;
     padding: 15px;
+    align-items: center;
+    max-width: 90%
     margin-top: auto;
+    margin: 20px auto 0 auto;
 }
 
 .btn-whats, .btn-financiamento {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 55px;
+    width: 120%;
+    height: 35px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
@@ -321,7 +324,7 @@
     .card-container { 
         max-width: 100% !important; 
         margin: 0 !important; 
-        border-radius: 0 !important; 
+        border-radius: 10px !important; 
     }
     
     .content-area { 
@@ -334,12 +337,10 @@
         gap: 20px !important; 
         margin-top: -90px !important; 
     }
-    
-    .logo-box { 
-        width: 120px !important; 
-        height: 120px !important; 
-    }
-    
+
+    .logo-box {
+  display: none !important;
+}
     .profile-box { 
         width: 140px !important; 
         height: 140px !important; 
@@ -349,11 +350,12 @@
     .bottom-row { 
         flex-direction: column !important; 
         text-align: center !important; 
-        gap: 25px !important; 
-    }
+        gap: 22px !important; 
     
+    }
+
     .buttons-area { 
-        width: 100% !important; 
+        width: 50% !important; 
         justify-content: center !important; 
     }
     
@@ -441,261 +443,6 @@
     height: 30px;
   }
 
-  @media (max-width: 768px) {
-  .texto-banner-pc, 
-  .background-banner { 
-    display: none !important; 
-  }
-
-  .banner-topo {
-    background-color: #ffffff;
-    padding: 15px 0;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .logo-esquerda {
-    max-width: 130px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .perfil-info {
-    width: 100%;
-    background-color: #0d0d0d;
-    padding: 30px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .foto-perfil-container {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    border: 4px solid #ffffff;
-    overflow: hidden;
-    margin-bottom: 15px;
-  }
-
-  .foto-circulo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .nome-vendedor {
-    color: #cc0000;
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-
-  .frase-vendedor {
-    color: #ffffff;
-    font-size: 14px;
-    margin-bottom: 20px;
-    max-width: 290px;
-  }
-
-  .botoes-sociais {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
-    max-width: 280px;
-  }
-
-  .btn-whatsapp, .btn-instagram {
-    width: 100%;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 24px;
-    color: #ffffff;
-    font-weight: bold;
-    text-decoration: none;
-    background-color: #cc0000;
-  }
-}
-@media (max-width: 768px) {
-  .texto-banner-pc, 
-  .background-banner { 
-    display: none !important; 
-  }
-
-  body {
-    background-color: #000000 !important;
-    margin: 0;
-    padding: 0;
-  }
-
-  .banner-topo {
-    background-color: #ffffff;
-    padding: 12px 0;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .logo-esquerda {
-    max-width: 120px;
-    height: auto;
-  }
-
-  .perfil-info {
-    width: 100%;
-    background-color: #000000;
-    padding: 25px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    box-sizing: border-box;
-  }
-
-  .foto-perfil-container {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    border: 3px solid #ffffff;
-    overflow: hidden;
-    margin: 0 auto 15px auto;
-  }
-
-  .foto-circulo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .nome-vendedor {
-    color: #cc0000 !important;
-    font-size: 22px !important;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin: 5px 0 !important;
-  }
-
-  .frase-vendedor {
-    color: #ffffff !important;
-    font-size: 13px !important;
-    opacity: 0.9;
-    margin-bottom: 20px !important;
-    max-width: 300px;
-    line-height: 1.4;
-  }
-
-  .botoes-sociais {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
-    max-width: 290px;
-    margin: 0 auto;
-  }
-
-  .btn-whatsapp, .btn-instagram {
-    width: 100% !important;
-    height: 46px !important;
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    border-radius: 24px !important;
-    color: #ffffff !important;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 15px;
-    background-color: #cc0000 !important;
-  }
- 
-  .banner-topo {
-    display: none !important;
-  }
-
-  body {
-    background-color: #000000 !important;
-    margin: 0;
-    padding: 0;
-  }
-
-  .perfil-info {
-    width: 100% !important;
-    max-width: 100% !important;
-    background-color: #000000 !important;
-    padding: 40px 20px 25px 20px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-    box-sizing: border-box !important;
-    position: static !important;
-  }
-
-  .foto-perfil-container {
-    width: 140px !important;
-    height: 140px !important;
-    border-radius: 50% !important;
-    border: 4px solid #ffffff !important;
-    overflow: hidden !important;
-    margin: 0 auto 20px auto !important;
-    position: static !important;
-    display: block !important;
-  }
-
-  .foto-circulo {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-  }
-
-  .nome-vendedor {
-    color: #cc0000 !important;
-    font-size: 24px !important;
-    font-weight: bold !important;
-    margin: 10px 0 5px 0 !important;
-    position: static !important;
-  }
-
-  .frase-vendedor {
-    color: #ffffff !important;
-    font-size: 14px !important;
-    margin: 0 auto 25px auto !important;
-    max-width: 290px !important;
-    position: static !important;
-  }
-
-  .botoes-sociais {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 12px !important;
-    width: 100% !important;
-    max-width: 290px !important;
-    margin: 0 auto !important;
-    position: static !important;
-  }
-
-  .btn-whatsapp, .btn-instagram {
-    width: 100% !important;
-    height: 46px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    border-radius: 24px !important;
-    color: #ffffff !important;
-    font-weight: bold !important;
-    text-decoration: none !important;
-    font-size: 15px !important;
-    background-color: #cc0000 !important;
-    float: none !important;
-    position: static !important;
-  }
-}
-
     </style>
 </head>
 <body>
@@ -757,11 +504,17 @@
                 <tr><td></td><td>24</td><td>R$ 611,24</td><td>R$ 19,72</td></tr>
                 <tr><td></td><td>60</td><td>R$ 810,27</td><td>R$ 26,14</td></tr>
                 <tr><td></td><td>12</td><td>R$ 1.208,34</td><td>R$ 38,98</td></tr>
+                <tr style="height: 20px;">
+    <td colspan="4"></td>
+</tr>
+                 <tr><td></td><td>80</td><td>R$ 217,49</td><td>R$ 7,02</td></tr>
+                <tr><td></td><td>60</td><td>R$ 281,70</td><td>R$ 9,09</td></tr>
+                <tr><td></td><td>48</td><td>R$ 346,98</td><td>R$ 11,19</td></tr>
+                <tr><td class="tag-voude">#voudeHonda+</td><td>36</td><td>R$ 457,12</td><td>R$ 14,75</td></tr>
+                <tr><td></td><td>24</td><td>R$ 672,35</td><td>R$ 21,69</td></tr>
+                <tr><td></td><td>18</td><td>R$ 891,28</td><td>R$ 28,75</td></tr>
+                <tr><td></td><td>12</td><td>R$ 1.329,14</td><td>R$ 42,88</td></tr>
             </tbody>
-             <tr style="height: 20px;">
-    <td colspan="4"></td>
-     <tr style="height: 20px;">
-    <td colspan="4"></td>
         </table>
         <div class="footer-info"><span><strong>Seguro de vida</strong></span><span>SIM</span></div>
         <div class="aviso-legal">Valores sujeitos a alteração. Inclui seguro de vida.</div>
@@ -771,44 +524,11 @@
     </div>
     </div>
     <div class="card-moto">
-        <div class="topo-red">
-            <div class="voltar-txt">&lt; Voltar</div>
-            <div class="nome-modelo">POP 110I ES +10%</div>
-            <img src="popvermelha.png">
-        </div>
-        <div class="barra-honda"><h2>HONDA</h2><span>Consórcio</span></div>
-        <table class="tabela-precos">
-            <thead><tr><th>Plano</th><th>Prazo</th><th>Parcela</th><th>Por dia</th></tr></thead>
-             <tr style="height: 20px;">
-    <td colspan="4"></td>
-</tr>
-            <tbody>
-                <tr><td></td><td>80</td><td>R$ 217,49</td><td>R$ 7,02</td></tr>
-                <tr><td></td><td>60</td><td>R$ 281,70</td><td>R$ 9,09</td></tr>
-                <tr><td></td><td>48</td><td>R$ 346,98</td><td>R$ 11,19</td></tr>
-                <tr><td class="tag-voude">#voudeHonda</td><td>36</td><td>R$ 457,12</td><td>R$ 14,75</td></tr>
-                <tr><td></td><td>24</td><td>R$ 672,35</td><td>R$ 21,69</td></tr>
-                <tr><td></td><td>18</td><td>R$ 891,28</td><td>R$ 28,75</td></tr>
-                <tr><td></td><td>12</td><td>R$ 1.329,14</td><td>R$ 42,88</td></tr>
-            </tbody>
-            <tr style="height: 20px;">
-    <td colspan="4"></td>
-     <tr style="height: 20px;">
-    <td colspan="4"></td>
-        </table>
-        <div class="footer-info"><span><strong>Seguro de vida</strong></span><span>SIM</span></div>
-        <div class="aviso-legal">Valores sujeitos a alteração. Inclui seguro de vida.</div>
-        <div class="container-botoes">
-        <a href="https://wa.me/5583986188078" class="btn-whats">ENTRAR EM CONTATO</a>
-        <a href="https://app.meucredere.com.br/simulador/loja/3bc1/vendedor/f85b?zero_km=__ALL" class="btn-financiamento">SIMULAR FINANCIAMENTO</a>
-    </div>
-    </div>
-     <div class="card-moto">
         
         <div class="topo-red">
             <div class="voltar-txt">&lt; Voltar</div>
             <div class="nome-modelo">BIZ 125 EX</div>
-            <img src="https://www.honda.com.br/motos/sites/hda/files/styles/product_860x550/public/2024-08/imagem-home-honda-biz-125-ex-lateral-azul_0.webp?itok=LYCemLFP"
+            <img src="https://www.honda.com.br/motos/sites/hda/files/2026-05/Home%20-%20EX%20-%20Vermelho%20Met%C3%A1lico%20%28%20Pearl%20Royalty%20Red%20%29.webp"
             <img src="C:\Users\mauri\Downloads\1776686440016.jpg">
         </div>
         <div class="barra-honda"><h2>HONDA</h2><span>Consórcio</span></div>
@@ -818,23 +538,23 @@
     <td colspan="4"></td>
 </tr>
             <tbody>
-                <tr><td></td><td>80</td><td>R$ 305,84</td><td>R$ 10,19</td></tr>
-                <tr><td></td><td>60</td><td>R$ 396,13</td><td>R$ 13,20</td></tr>
-                <tr><td></td><td>48</td><td>R$ 487,92</td><td>R$ 16,26</td></tr>
-                <tr><td class="tag-voude">#voudeHonda</td><td>36</td><td>R$ 642,81</td><td>R$ 21,43</td></tr>
-                <tr><td></td><td>24</td><td>R$ 945,47</td><td>R$ 31,52</td></tr>
-                <tr><td></td><td>18</td><td>R$ 1.253,32</td><td>R$ 41,78</td></tr>
-                <tr><td></td><td>12</td><td>R$ 1.869,05</td><td>R$ 62,30</td></tr>
+                <tr><td></td><td>80</td><td>R$ 311,76</td><td>R$ 10,06</td></tr>
+                <tr><td></td><td>60</td><td>R$ 403,79</td><td>R$ 13,03</td></tr>
+                <tr><td></td><td>48</td><td>R$ 497,36</td><td>R$ 16,04</td></tr>
+                <tr><td class="tag-voude">#voudeHonda</td><td>36</td><td>R$ 655,25</td><td>R$ 21,14</td></tr>
+                <tr><td></td><td>24</td><td>R$ 963,76</td><td>R$ 31,09</td></tr>
+                <tr><td></td><td>18</td><td>R$ 1.277,57</td><td>R$ 41,21</td></tr>
+                <tr><td></td><td>12</td><td>R$ 1.905,22</td><td>R$ 61,46</td></tr>
                 <tr style="height: 20px;">
     <td colspan="4"></td>
 </tr>
-                <tr><td></td><td>80</td><td>R$ 333,37</td><td>R$ 11,11</td></tr>
-                <tr><td></td><td>60</td><td>R$ 431,78</td><td>R$ 14,39</td></tr>
-                <tr><td></td><td>48</td><td>R$ 531,84</td><td>R$ 17,73</td></tr>
-                <tr><td class="tag-voude">#voudeHonda+</td><td>36</td><td>R$ 700,66</td><td>R$ 23,36</td></tr>
-                <tr><td></td><td>24</td><td>R$ 1.030,56</td><td>R$ 34,35</td></tr>
-                <tr><td></td><td>18</td><td>R$ 1.366,12</td><td>R$ 45,54</td></tr>
-                <tr><td></td><td>12</td><td>R$ 2.037,26</td><td>R$ 67,91</td></tr>
+                <tr><td></td><td>80</td><td>R$ 339,82</td><td>R$ 10,96</td></tr>
+                <tr><td></td><td>60</td><td>R$ 440,13</td><td>R$ 14,20</td></tr>
+                <tr><td></td><td>48</td><td>R$ 542,13</td><td>R$ 17,49</td></tr>
+                <tr><td class="tag-voude">#voudeHonda+</td><td>36</td><td>R$ 714,22</td><td>R$ 23,04</td></tr>
+                <tr><td></td><td>24</td><td>R$ 1.050,50</td><td>R$ 33,89</td></tr>
+                <tr><td></td><td>18</td><td>R$ 1.392,55</td><td>R$ 44,92</td></tr>
+                <tr><td></td><td>12</td><td>R$ 2.076,69</td><td>R$ 66,99</td></tr>
             </tbody>
         </table>
         <div class="footer-info"><span><strong>Seguro de vida</strong></span><span>SIM</span></div>
@@ -848,7 +568,7 @@
         <div class="topo-red">
             <div class="voltar-txt">&lt; Voltar</div>
             <div class="nome-modelo">BIZ 125 ES</div>
-            <img src="https://www.honda.com.br/motos/sites/hda/files/2025-08/Imagem-Home-Honda-Biz-125-ES-Branco-Ross-White_0.webp">
+            <img src="https://www.honda.com.br/motos/sites/hda/files/2026-05/Home%20-%20ES%20-%20Branco%20%28%20Ross%20White%20%29%20HERO%20%281%29.webp">
         </div>
         <div class="barra-honda"><h2>HONDA</h2><span>Consórcio</span></div>
         <table class="tabela-precos">
@@ -857,23 +577,23 @@
     <td colspan="4"></td>
 </tr>
             <tbody>
-                <tr><td></td><td>80</td><td>R$ 247,12</td><td>R$ 8,24</td></tr>
-                <tr><td></td><td>60</td><td>R$ 320,07</td><td>R$ 10,67</td></tr>
-                <tr><td></td><td>48</td><td>R$ 394,24</td><td>R$ 13,14</td></tr>
-                <tr><td class="tag-voude">#voudeHonda</td><td>36</td><td>R$ 519,39</td><td>R$ 17,31</td></tr>
-                <tr><td></td><td>24</td><td>R$ 763,94</td><td>R$ 25,46</td></tr>
-                <tr><td></td><td>18</td><td>R$ 1.012,68</td><td>R$ 33,76</td></tr>
-                <tr><td></td><td>12</td><td>R$ 1.510,19</td><td>R$ 50,34</td></tr>
+                <tr><td></td><td>80</td><td>R$ 251,87</td><td>R$ 8,12</td></tr>
+                <tr><td></td><td>60</td><td>R$ 326,23</td><td>R$ 10,52</td></tr>
+                <tr><td></td><td>48</td><td>R$ 401,83</td><td>R$ 12,96</td></tr>
+                <tr><td class="tag-voude">#voudeHonda</td><td>36</td><td>R$ 529,38</td><td>R$ 17,08</td></tr>
+                <tr><td></td><td>24</td><td>R$ 778,64</td><td>R$ 25,12</td></tr>
+                <tr><td></td><td>18</td><td>R$ 1.032,17</td><td>R$ 33,30</td></tr>
+                <tr><td></td><td>12</td><td>R$ 1.539,25</td><td>R$ 49,65</td></tr>
                 <tr style="height: 20px;">
     <td colspan="4"></td>
 </tr>
-                <tr><td></td><td>80</td><td>R$ 269,36</td><td>R$ 8,98</td></tr>
-                <tr><td></td><td>60</td><td>R$ 348,88</td><td>R$ 11,63</td></tr>
-                <tr><td></td><td>48</td><td>R$ 429,72</td><td>R$ 14,32</td></tr>
-                <tr><td class="tag-voude">#voudeHonda+</td><td>36</td><td>R$ 566,13</td><td>R$ 18,87</td></tr>
-                <tr><td></td><td>24</td><td>R$ 832,69</td><td>R$ 27,76</td></tr>
-                <tr><td></td><td>18</td><td>R$ 1.103,83</td><td>R$ 36,79</td></tr>
-                <tr><td></td><td>12</td><td>R$ 1.646,11</td><td>R$ 54,87</td></tr>
+                <tr><td></td><td>80</td><td>R$ 274,54</td><td>R$ 8,86</td></tr>
+                <tr><td></td><td>60</td><td>R$ 355,59</td><td>R$ 11,47</td></tr>
+                <tr><td></td><td>48</td><td>R$ 437,99</td><td>R$ 14,13</td></tr>
+                <tr><td class="tag-voude">#voudeHonda+</td><td>36</td><td>R$ 577,03</td><td>R$ 18,61</td></tr>
+                <tr><td></td><td>24</td><td>R$ 848,72</td><td>R$ 27,38</td></tr>
+                <tr><td></td><td>18</td><td>R$ 1.125,06</td><td>R$ 36,29</td></tr>
+                <tr><td></td><td>12</td><td>R$ 1.677,79</td><td>R$ 54,12</td></tr>
             </tbody>
         </table>
         <div class="footer-info"><span><strong>Seguro de vida</strong></span><span>SIM</span></div>
